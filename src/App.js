@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Header from '../src/Components/Header.js'
 
 class App extends Component {
   state = {
@@ -9,9 +10,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <div>Todos Apps</div>
-        </header>
+        <div className="wrapper">
+          <div className='card frame'>
+            <Header numTodos={this.state.tasks.length}/>
+          </div>
+        </div>
     </div>
     );
   }

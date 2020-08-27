@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Header = () => {
+const Header = (props) => {
     return (
-        <div>
-            
+        <div className='card-header'>
+            <h1 className='card-header-title header'>
+                You have {props.numTodos} Todos
+            </h1>            
         </div>
     );
 };
