@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from '../src/Components/Header.js'
+import Header from '../src/Components/Header';
+import TodoList from '../src/Components/TodoList'
 
 class App extends Component {
   state = {
@@ -13,6 +14,7 @@ class App extends Component {
         <div className="wrapper">
           <div className='card frame'>
             <Header numTodos={this.state.tasks.length}/>
+            <TodoList/>
           </div>
         </div>
     </div>
