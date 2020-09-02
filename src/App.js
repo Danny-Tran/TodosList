@@ -14,6 +14,10 @@ class App extends Component {
     newArr.splice(index,1);
     this.setState({tasks:newArr});
   }
+
+  handleSubmit = (task) => {
+    this.setState({tasks: [...this.state.tasks,task]})
+  }
   
   render() {
     return (
@@ -22,7 +26,7 @@ class App extends Component {
           <div className='card frame'>
             <Header numTodos={this.state.tasks.length}/>
             <TodoList tasks={this.state.tasks} onDelete={this.handleDelete}/>
-            <SubmitForm/>
+            <SubmitForm onFormSubmit={this.handleSubmit}/>
           </div>
         </div>
     </div>
