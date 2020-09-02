@@ -2,7 +2,7 @@ import React from 'react';
 
 const TodoList = (props) => {
     const tasks = props.tasks.map((task, index)=> {
-        //
+        return <Task content={task} key={index} id={index}/>
     })
 
     return (
