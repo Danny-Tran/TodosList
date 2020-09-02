@@ -38,3 +38,9 @@ form {
   max-height: 200px;
   overflow-y: auto;
 }
+.button {
+  background-color:green;
+}
+.delete {
+  background-color: red;
+}

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from '../src/Components/Header';
-import TodoList from '../src/Components/TodoList'
+import TodoList from '../src/Components/TodoList';
+import SubmitForm from '../src/Components/SubmitForm'
 
 class App extends Component {
   state = {
@@ -21,6 +22,7 @@ class App extends Component {
           <div className='card frame'>
             <Header numTodos={this.state.tasks.length}/>
             <TodoList tasks={this.state.tasks} onDelete={this.handleDelete}/>
+            <SubmitForm/>
           </div>
         </div>
     </div>

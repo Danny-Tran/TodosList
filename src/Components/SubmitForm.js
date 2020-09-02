@@ -3,9 +3,14 @@ import React, { Component } from 'react';
 class SubmitForm extends Component {
     render() {
         return (
-            <div>
-                I'm Form submit
-            </div>
+            <form>
+                <input
+                    type='text'
+                    className= 'input'
+                    placeholder= 'enter task'
+                />
+                <button className='button'>Submit</button>
+            </form>
         );
     }
 }
