@@ -1,4 +1,5 @@
 import React from 'react';
+import Task from '../Components/Task';
 
 const TodoList = (props) => {
     const tasks = props.tasks.map((task, index)=> {
@@ -7,7 +8,7 @@ const TodoList = (props) => {
 
     return (
         <div className='list-wrapper'>
-            Hello I am Tasks
+            {tasks}
         </div>
     );
 };

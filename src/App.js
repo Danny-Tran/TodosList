@@ -14,7 +14,7 @@ class App extends Component {
         <div className="wrapper">
           <div className='card frame'>
             <Header numTodos={this.state.tasks.length}/>
-            <TodoList/>
+            <TodoList tasks={this.state.tasks}/>
           </div>
         </div>
     </div>
