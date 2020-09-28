@@ -4,6 +4,10 @@ import Header from '../src/Components/Header';
 import TodoList from '../src/Components/TodoList';
 import SubmitForm from '../src/Components/SubmitForm'
 
+
+// break the app into 3 seperate component,
+// first create a header
+  // this component consist of 
 class App extends Component {
   state = {
     tasks: ['task 1','task 2','task 3']
