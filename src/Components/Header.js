@@ -1,5 +1,8 @@
 import React from 'react';
 
+
+// header component that will display how many task currently avaiable
+// passing props from state of APP component 
 const Header = (props) => {
     return (
         <div className='card-header'>

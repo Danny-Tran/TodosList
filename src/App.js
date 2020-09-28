@@ -28,6 +28,7 @@ class App extends Component {
       <div className="App">
         <div className="wrapper">
           <div className='card frame'>
+            {/* create numTodo to cal the number of open task */}
             <Header numTodos={this.state.tasks.length}/>
             <TodoList tasks={this.state.tasks} onDelete={this.handleDelete}/>
             <SubmitForm onFormSubmit={this.handleSubmit}/>
