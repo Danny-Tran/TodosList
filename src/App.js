@@ -13,12 +13,15 @@ class App extends Component {
     tasks: ['task 1','task 2','task 3']
   };
 
+  // handle delete task function 
   handleDelete = (index) => {
     const newArr = [...this.state.tasks];
     newArr.splice(index,1);
     this.setState({tasks:newArr});
   }
 
+  // handle submit function of a new task 
+    // to do this we set task to a new state 
   handleSubmit = (task) => {
     this.setState({tasks: [...this.state.tasks,task]})
   }

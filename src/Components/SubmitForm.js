@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+// submit component that will take user inout and replace it with current state of tasks
+
 class SubmitForm extends Component {
   state = { term: '' };
 
