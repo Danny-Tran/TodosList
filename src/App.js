@@ -31,6 +31,7 @@ class App extends Component {
             {/* create numTodo to cal the number of open task */}
             <Header numTodos={this.state.tasks.length}/>
             {/* passing Tasks state from above to TodoList as a props to display tasks */}
+            {/* Passing onDelete function to todoList component to handle delete */}
             <TodoList tasks={this.state.tasks} onDelete={this.handleDelete}/>
             <SubmitForm onFormSubmit={this.handleSubmit}/>
           </div>
